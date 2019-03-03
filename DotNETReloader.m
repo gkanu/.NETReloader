@@ -122,7 +122,7 @@ Catch@Module[{sourcePath,run
    ;LoadNETAssembly@FileNameJoin[{$tempDirectory,typeName<>".dll"}]
    ;If[Head@namespace=!=getNamespace
       ,LoadNETType[namespace<>"."<>typeName,opts,StaticsVisible->True]
-      ,LoadNETType[typeName,opts,StaticsVisible->True]]
+      ,LoadNETType[typeName,opts,StaticsVisible->False]]
 ]
 ]
 
